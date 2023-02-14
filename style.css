@@ -32,3 +32,10 @@
   .circle:hover{
     fill: rgb(0, 149, 105);
   }
+
+  .border {
+    border-color: rgb(227, 0, 38);
+    stroke: rgb(0, 255, 204);
+    border-width: 5px;
+    stroke-width: 6px;
+}

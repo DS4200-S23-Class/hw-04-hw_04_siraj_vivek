@@ -18,7 +18,7 @@
     <div class="row">
         <div class="column left">
             <!-- On the left column make the scatter plot -->
-            <svg width="600" height="400">
+            <svg id="graph" width="600" height="400">
                 <g transform="translate(50,350)">
                   <line x1="0" y1="0" x2="500" y2="0" stroke="black"/>
                   <line x1="0" y1="0" x2="0" y2="-300" stroke="black"/>
@@ -40,7 +40,7 @@
             <!-- B. Select X and Y Coordinates -->
             <form>
                 <label for="x-coord">Select the x coordinate for the point you want to add.</label>
-                <select id="framework">
+                <select id="framework1">
                     <option value="x-one">1</option>
                     <option value="x-two">2</option>
                     <option value="x-three">3</option>
@@ -57,7 +57,7 @@
             <br>
 
             <label for="y-coord">Select the y coordinate for the point you want to add.</label>
-            <select id="framework">
+            <select id="framework2">
                 <option value="y-one">1</option>
                 <option value="y-two">2</option>
                 <option value="y-three">3</option>
@@ -73,8 +73,7 @@
             <br>
             
             <!-- C. Add point with the selected coordinates -->
-            <button id='btn' type="button" onClick="buttonClicked(
-                )"> Add point </button>
+            <button id='btn' type="button" onClick="submitPoint()"> Add point </button>
 
         </div>
     </div>
