@@ -22,3 +22,13 @@
   .right {
     width: 40%;
   }
+
+
+  .circle {
+    fill:rgb(0, 0, 0);
+  
+  }
+  
+  .circle:hover{
+    fill: rgb(0, 149, 105);
+  }
