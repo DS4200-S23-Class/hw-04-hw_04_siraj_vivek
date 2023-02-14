@@ -3,11 +3,94 @@
 
 <head>
     <meta charset=utf-8/>
+     <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>hw-04</title>
 </head>
 
 
 <body>
 
+    <div>
+        <h1>hw-03: Event Handling</h1>   
+    <div>
+
+    <!-- Two column layout -->
+    <div class="row">
+        <div class="column left">
+            <!-- On the left column make the scatter plot -->
+            <svg width="600" height="400">
+                <g transform="translate(50,350)">
+                  <line x1="0" y1="0" x2="500" y2="0" stroke="black"/>
+                  <line x1="0" y1="0" x2="0" y2="-300" stroke="black"/>
+                  <circle cx="100" cy="-100" r="4" fill="black"/>
+                  <circle cx="200" cy="-200" r="4" fill="black"/>
+                  <circle cx="400" cy="-100" r="4" fill="black"/>
+                  <circle cx="450" cy="-300" r="4" fill="black"/>
+                </g>
+              </svg>
+        </div>
+        <!-- In the right column add the interactive features -->
+        <div class="column right">
+
+            <!-- A. Last Point Clicked-->
+            <p>Last point clicked:</p>
+            
+            <br>
+
+            <!-- B. Select X and Y Coordinates -->
+            <form>
+                <label for="x-coord">Select the x coordinate for the point you want to add.</label>
+                <select id="framework">
+                    <option value="x-one">1</option>
+                    <option value="x-two">2</option>
+                    <option value="x-three">3</option>
+                    <option value="x-four">4</option>
+                    <option value="x-five">5</option>
+                    <option value="x-six">6</option>
+                    <option value="x-seven">7</option>
+                    <option value="x-eight">8</option>
+                    <option value="x-nine">9</option>
+                </select>
+            </form>
+            
+            <br>
+            <br>
+
+            <label for="y-coord">Select the y coordinate for the point you want to add.</label>
+            <select id="framework">
+                <option value="y-one">1</option>
+                <option value="y-two">2</option>
+                <option value="y-three">3</option>
+                <option value="y-four">4</option>
+                <option value="y-five">5</option>
+                <option value="y-six">6</option>
+                <option value="y-seven">7</option>
+                <option value="y-eight">8</option>
+                <option value="y-nine">9</option>
+            </select>
+
+            <br>
+            <br>
+            
+            <!-- C. Add point with the selected coordinates -->
+            <button id='btn' type="button" onClick="buttonClicked(
+                )"> Add point </button>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    </div>
+    <h2 class="title">Acknowledgements</h2>
+    <div>
+    <div>
+        <ul>
+            <li>https://www.w3schools.com/tags/tag_select.asp</li>
+            <li>https://www.javascripttutorial.net/javascript-dom/javascript-select-box/</li>
+            <li>https://www.w3schools.com/howto/howto_css_two_columns.asp</li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
 
 </body>
 
